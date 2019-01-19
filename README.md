@@ -1,8 +1,8 @@
-# react-ignore-rerender
-
 [![NPM](https://img.shields.io/npm/v/react-ignore-rerender.svg)](https://www.npmjs.com/package/react-ignore-rerender) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-Simple component to ignore a rerender of a piece of React's render method.
+# react-ignore-rerender
+
+Simple component for ignore re-rendering of a piece of React's render method.
 
 ## Install
 
@@ -46,7 +46,7 @@ class Example extends Component {
 ```
 ###### NOTE:
 
-This component doesn't rerender when changing any props or state except changing state.showTitle or state.showDescription.
+This component doesn't rerender when changing any props or state except ```showTitle``` and ```showDescription```.
 
 ## License
 
