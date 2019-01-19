@@ -1,7 +1,7 @@
 {
   "name": "react-ignore-rerender",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.2.0",
+  "description": "Simple component to ignore a rerender of a piece of the render method",
   "author": "soroushchehresa",
   "license": "MIT",
   "repository": "soroushchehresa/react-ignore-rerender",
@@ -57,5 +57,13 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "react",
+    "rerender",
+    "render",
+    "rendering",
+    "ignore",
+    "performance"
   ]
 }

@@ -1,22 +1,28 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
+class IgnoreRerender extends Component {
+  shouldComponentUpdate(np) {
+    const { whiteList } = this.props
+    let shouldComponentUpdate = false
+    Object.keys(whiteList)
+      .forEach((includeItem) => {
+        if ((whiteList[includeItem] !== np.whiteList[includeItem])) {
+          shouldComponentUpdate = true
+        }
+      })
+    return shouldComponentUpdate
   }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
+  render = () => this.props.children
 }
+
+IgnoreRerender.propTypes = {
+  whiteList: PropTypes.object,
+  children: PropTypes.element.isRequired
+}
+
+IgnoreRerender.defaultProps = {
+  whiteList: {}
+}
+
+export default IgnoreRerender
