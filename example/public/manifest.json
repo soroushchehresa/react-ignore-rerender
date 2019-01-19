@@ -1,8 +1,0 @@
-{
-  "short_name": "react-ignore-rerender",
-  "name": "react-ignore-rerender",
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
-}
