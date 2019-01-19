@@ -6,8 +6,17 @@ Simple component to ignore a rerender of a piece of React's render method.
 
 ## Install
 
+npm:
+
 ```bash
 npm i -S react-ignore-rerender
+```
+
+
+yarn:
+
+```bash
+yarn add react-ignore-rerender
 ```
 
 ## Usage
