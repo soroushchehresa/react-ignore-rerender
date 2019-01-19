@@ -1,6 +1,6 @@
 {
   "name": "react-ignore-rerender",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Simple component to ignore a rerender of a piece of React's render method",
   "author": "soroushchehresa",
   "license": "MIT",
