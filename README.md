@@ -25,7 +25,7 @@ yarn add react-ignore-rerender
 import React, { Component } from 'react';
 import IgnoreRerender from 'react-ignore-rerender';
 
-class Example extends Component {
+class ExampleComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -46,7 +46,7 @@ class Example extends Component {
 ```
 ###### NOTE:
 
-This component doesn't rerender when changing any props or state except ```showTitle``` and ```showDescription```.
+```ExampleComponent``` doesn't rerender when changing any props or state except ```showTitle``` and ```showDescription```.
 
 ## License
 
