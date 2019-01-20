@@ -21,6 +21,8 @@ yarn add react-ignore-rerender
 
 ## Usage
 
+Without ```whiteList```:
+
 ```jsx
 import React, { Component } from 'react';
 import IgnoreRerender from 'react-ignore-rerender';
@@ -29,8 +31,51 @@ class ExampleComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showTitle: false,
-      showDescription: false,
+      showTitle: true,
+      showDescription: true,
+    };
+  }
+  render () {
+    const {showTitle, showDescription} = this.state;
+    return (
+      <div>
+        { showTitle && <h1>Title</h1> }
+        { showDescription && <p>Description</p> }
+        <IgnoreRerender>
+          <ul className="list">
+            <li className="list-item">list item 1</li>
+            <li className="list-item">list item 2</li>
+            <li className="list-item">list item 3</li>
+            <li className="list-item">list item 4</li>
+            <li className="list-item">list item 5</li>
+            <li className="list-item">list item 6</li>
+            <li className="list-item">list item 7</li>
+          </ul>
+        </IgnoreRerender>
+      </div>
+    )
+  }
+}
+```
+
+###### NOTE:
+
+```list``` does not rerender at all.
+
+***
+
+With ```whiteList```:
+
+```jsx
+import React, { Component } from 'react';
+import IgnoreRerender from 'react-ignore-rerender';
+
+class ExampleComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showTitle: true,
+      showDescription: true,
     };
   }
   render () {
@@ -44,9 +89,10 @@ class ExampleComponent extends Component {
   }
 }
 ```
+
 ###### NOTE:
 
-```ExampleComponent``` doesn't rerender when changing any props or state except ```showTitle``` and ```showDescription```.
+```ExampleComponent``` does not rerender when changing any props or state except ```showTitle``` and ```showDescription```.
 
 ## License
 
