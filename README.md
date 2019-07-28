@@ -1,15 +1,5 @@
-# Support
-<a href="https://www.patreon.com/soroushchehresa">
-	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
-<br />
-<br />
-<br />
-
-[![NPM](https://img.shields.io/npm/v/react-ignore-rerender.svg)](https://www.npmjs.com/package/react-ignore-rerender) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
 # react-ignore-rerender
+[![NPM](https://img.shields.io/npm/v/react-ignore-rerender.svg)](https://www.npmjs.com/package/react-ignore-rerender) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Simple component for ignore re-rendering of a piece of React's render method.
 
@@ -27,6 +17,8 @@ yarn:
 ```bash
 yarn add react-ignore-rerender
 ```
+
+<br />
 
 ## Usage
 
@@ -103,6 +95,15 @@ class ExampleComponent extends Component {
 
 ```ExampleComponent``` does not rerender when changing any props or state except ```showTitle``` and ```showDescription```.
 
-## License
+<br />
 
+## License
 MIT © [soroushchehresa](https://github.com/soroushchehresa)
+
+<br />
+
+## Support
+<a href="https://www.patreon.com/soroushchehresa">
+	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
+
