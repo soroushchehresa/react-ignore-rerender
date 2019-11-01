@@ -3,7 +3,7 @@
 
 Simple component for ignore re-rendering of a piece of React's render method.
 
-## Install
+## Installation
 
 npm:
 
